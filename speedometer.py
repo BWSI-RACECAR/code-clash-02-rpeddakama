@@ -40,7 +40,7 @@ class Solution:
         ub = len(ary) - 1
 
         for i in range(len(ary)):
-            for j in range(1, len(ary)):
+            for j in range(i + 1, len(ary)):
                 if i != j:
                     if ary[i] + ary[j] == target:
                         return f"[{i}, {j}]"

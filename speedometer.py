@@ -35,21 +35,12 @@ class Solution:
         # return type: list or bool
 
         # TODO: Write code below to return a list with the solution to the prompt
-        lb = 0
-        ub = len(ary) - 1
 
         for i in range(len(ary)):
             for j in range(i + 1, len(ary)):
                 if i != j:
                     if ary[i] + ary[j] == target:
                         return [i, j]
-        # while lb < ub:
-        #     if ary[lb] + ary[ub] == target:
-        #         return f"[{lb}, {ub}]"
-        #     elif ary[lb] + ary[ub] < target:
-        #         lb += 1
-        #     else:
-        #         ub -= 1
 
         return False
 

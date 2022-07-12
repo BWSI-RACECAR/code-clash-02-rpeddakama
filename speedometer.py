@@ -43,7 +43,7 @@ class Solution:
             for j in range(i + 1, len(ary)):
                 if i != j:
                     if ary[i] + ary[j] == target:
-                        return [{i}, {j}]
+                        return [i, j]
         # while lb < ub:
         #     if ary[lb] + ary[ub] == target:
         #         return f"[{lb}, {ub}]"

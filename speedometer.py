@@ -35,7 +35,6 @@ class Solution:
         # return type: list or bool
 
         # TODO: Write code below to return a list with the solution to the prompt
-        ary.sort()
         lb = 0
         ub = len(ary) - 1
 
